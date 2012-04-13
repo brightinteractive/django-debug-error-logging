@@ -31,8 +31,8 @@ Edit `testsettings.py` and update the app name in INSTALLED_APPS.
 Edit `setup.py` and update the settings at the top of the file.
 Edit the `README`.
 
-Pushing releases to PyPI
-========================
+Publishing releases to PyPI
+===========================
 
 To register your package on PyPI:
 
@@ -41,7 +41,14 @@ To register your package on PyPI:
 To publish a new version of your app to PyPI, set the `__version__` string in
 your package's `__init__.py`, then run:
 
+    # Run the tests against multiple environments
+    tox
+	# Publish to PyPI
     ./setup.py publish
+	# Tag (change 1.0.0 to the version you are publishing!)
+	git tag -a v1.0.0 -m 'Version 1.0.0'
+	git push --tags
+
 
 Running the tests
 =================
