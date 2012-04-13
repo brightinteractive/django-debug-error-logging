@@ -9,7 +9,7 @@ import sys
 
 name = 'django-debug-error-logging'
 package = 'debug_error_logging'
-description = ''
+description = 'Enable error logging in Django when DEBUG = True'
 url = 'http://github.com/brightinteractive/django-debug-error-logging/'
 author = 'Bright Interactive'
 author_email = 'francis@bright-interactive.co.uk'
