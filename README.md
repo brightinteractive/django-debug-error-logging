@@ -74,7 +74,8 @@ Changelog
 License
 =======
 
-Copyright © DabApps.
+Copyright (c) Bright Interactive Limited.
+Copyright (c) DabApps.
 
 All rights reserved.
 
