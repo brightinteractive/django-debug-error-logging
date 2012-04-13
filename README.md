@@ -1,45 +1,25 @@
-Django Reusable Apps
-====================
+Django Debug Error Logging
+==========================
 
-**Simple template for reusable apps with Django.**
+**Enable error logging in Django when DEBUG = True.**
 
-**Author:** Tom Christie, [Follow me on Twitter][1].
+**Author:** Francis Devereux, [Bright Interactive][1].
 
-Overview
-========
 
-A simple template for creating reusable apps with Django.
-
-Includes:
-
-1. A `setup.py` that makes your life easy and doesn't suck.
-2. A simple layout that lets you run the app's tests without installing it into an existing project.
-3. A `tox` config to allow you to run your tests against multiple environments.
-
-Creating a new app
+Adding to your app
 ==================
 
-You'll want to clone this project, then create a fresh git repo for it:
+Add the following to urls.py:
 
-    git clone git://github.com/dabapps/django-reusable-app.git my-project-name
-    cd my-project-name
-    mv myproject packagename
-    rm -rf .git
-    git init
+    import debug_error_logging
+    debug_error_logging.enable_error_logging_in_debug_mode()
 
-Edit `testsettings.py` and update the app name in INSTALLED_APPS.
-Edit `setup.py` and update the settings at the top of the file.
-Edit the `README`.
 
 Publishing releases to PyPI
 ===========================
 
-To register your package on PyPI:
-
-    ./setup.py register
-
-To publish a new version of your app to PyPI, set the `__version__` string in
-your package's `__init__.py`, then run:
+To publish a new version of this package to PyPI, set the `__version__`
+string in `debug_error_logging/__init__.py`, then run:
 
     # Run the tests against multiple environments
     tox
@@ -66,13 +46,6 @@ then simply run `tox`:
 Changelog
 =========
 
-1.0.1
------
-
-* Include author_email in setup.py
-* Move testsettings into top level dir
-* Update tox to test against Django 1.3, 1.4 (From 1.2, 1.3)
-
 1.0.0
 -----
 
@@ -82,7 +55,7 @@ License
 =======
 
 Copyright (c) Bright Interactive Limited.
-Copyright (c) DabApps.
+Started using django-reusable-app template Copyright (c) DabApps.
 
 All rights reserved.
 
@@ -105,4 +78,4 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[1]: http://twitter.com/_tomchristie
+[1]: http://www.bright-interactive.com/

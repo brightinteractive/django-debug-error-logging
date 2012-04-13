@@ -7,12 +7,12 @@ import os
 import sys
 
 
-name = 'django-reusable-app'
-package = 'myproject'
+name = 'django-debug-error-logging'
+package = 'debug_error_logging'
 description = ''
-url = 'http://github.com/.../.../'
-author = ''
-author_email = ''
+url = 'http://github.com/brightinteractive/django-debug-error-logging/'
+author = 'Bright Interactive'
+author_email = 'francis@bright-interactive.co.uk'
 license = 'BSD'
 install_requires = []
 

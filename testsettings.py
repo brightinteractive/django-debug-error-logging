@@ -6,5 +6,5 @@ DATABASES = {
 }
 
 INSTALLED_APPS = (
-    'myproject',
+    'debug_error_logging',
 )
