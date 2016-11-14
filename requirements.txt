@@ -1,2 +1,4 @@
-# debug.technical_500_response method signature has changed
+# debug.technical_500_response method signature changed around django 1.8.16
+# if you want to use this lib with an older version of Django you'll need to use an older release
+# and you'll need to branch of an older version if you need to make changes and can't upgrade Django.
 django>=1.8.16
