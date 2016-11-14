@@ -1,1 +1,2 @@
-django>=1.3
+# debug.technical_500_response method signature has changed
+django>=1.8.16
