@@ -4,7 +4,7 @@
 
 from django.conf import settings
 
-__version__ = '2.0.0'
+__version__ = '2.1.0'
 
 
 def enable_error_logging_in_debug_mode():
