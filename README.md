@@ -51,6 +51,14 @@ Changelog
 
 * Initial release
 
+2.0.0
+-----
+* Changed overidden method signature to match later versions of Django
+
+2.1.0
+
+* Bug fix
+
 License
 =======
 
