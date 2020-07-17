@@ -67,8 +67,12 @@ Changelog
 * Changed overidden method signature to match later versions of Django
 
 2.1.0
-
+-----
 * Bug fix
+
+2.1.1
+-----
+* Python 3 Support
 
 License
 =======
